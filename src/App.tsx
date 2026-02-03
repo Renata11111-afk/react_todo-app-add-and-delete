@@ -75,7 +75,6 @@ export const App: React.FC = () => {
     };
 
     setTempTodo(newTempTodo);
-    setError(null);
 
     addTodo({ title: trimmedTitle, userId: USER_ID, completed: false })
       .then(newTodo => {
